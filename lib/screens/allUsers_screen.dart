@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import '../api/message.dart';
+import '../api/user.dart';
 import '../models/message_model.dart';
 import '../widget/myscaffold.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class AllUsersScreen extends StatefulWidget {
+  const AllUsersScreen({super.key});
   @override
   State<StatefulWidget> createState() {
-    return _HomeScreenState();
+    return AllUsersScreenState();
   }
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class AllUsersScreenState extends State<AllUsersScreen> {
   late Future<List<MessageModel>> futureMessages;
   @override
   void initState() {
     super.initState();
-    futureMessages = Message().fetchMessages();
+    futureMessages = fetchMessages() as Future<List<MessageModel>>;
   }
 
   @override

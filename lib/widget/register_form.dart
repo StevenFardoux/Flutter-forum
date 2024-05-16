@@ -113,12 +113,10 @@ class _RegisterFormState extends State<RegisterForm> {
                 border: OutlineInputBorder(),
                 errorStyle: TextStyle(color: Color.fromARGB(255, 196, 43, 160)),
                 errorBorder: OutlineInputBorder(
-                  borderSide:
-                      BorderSide(color: Color.fromARGB(255, 196, 43, 160)),
+                  borderSide: BorderSide(color: Color.fromARGB(255, 196, 43, 160)),
                 ),
                 focusedErrorBorder: OutlineInputBorder(
-                  borderSide:
-                      BorderSide(color: Color.fromARGB(255, 196, 43, 160)),
+                  borderSide: BorderSide(color: Color.fromARGB(255, 196, 43, 160)),
                 ),
               ),
               validator: (value) {
@@ -138,12 +136,10 @@ class _RegisterFormState extends State<RegisterForm> {
                 border: OutlineInputBorder(),
                 errorStyle: TextStyle(color: Color.fromARGB(255, 196, 43, 160)),
                 errorBorder: OutlineInputBorder(
-                  borderSide:
-                      BorderSide(color: Color.fromARGB(255, 196, 43, 160)),
+                  borderSide: BorderSide(color: Color.fromARGB(255, 196, 43, 160)),
                 ),
                 focusedErrorBorder: OutlineInputBorder(
-                  borderSide:
-                      BorderSide(color: Color.fromARGB(255, 196, 43, 160)),
+                  borderSide: BorderSide(color: Color.fromARGB(255, 196, 43, 160)),
                 ),
               ),
               validator: (value) {
@@ -165,9 +161,7 @@ class _RegisterFormState extends State<RegisterForm> {
               validator: (value) {
                 if (value == null || value.isEmpty) {
                   return 'Veuillez entrer un email';
-                } else if (!RegExp(
-                        r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$')
-                    .hasMatch(value)) {
+                } else if (!RegExp(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$').hasMatch(value)) {
                   return 'Veuillez entrer un email valide';
                 }
                 return null;
@@ -198,7 +192,6 @@ class _RegisterFormState extends State<RegisterForm> {
                   return 'Le mot de passe doit contenir au moins un chiffre';
                 }
                 if (!RegExp(r'(?=.*[\W])').hasMatch(value)) {
-// \W signifie tout caractère qui n'est pas une lettre ou un chiffre
                   return 'Le mot de passe doit contenir au moins un caractère spécial';
                 }
                 return null;
@@ -243,3 +236,4 @@ class _RegisterFormState extends State<RegisterForm> {
     );
   }
 }
+

@@ -18,6 +18,6 @@ class _RegisterScreen extends State<RegisterScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return center();
+    return MyScaffold(name: 'Register', body: RegisterForm());
   }
 }
