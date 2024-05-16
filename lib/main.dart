@@ -3,6 +3,7 @@ import 'package:tp05/screens/detail_screen.dart';
 import 'screens/home_screen.dart';
 
 
+
 void main() {
   runApp(const MainApp());
 }
